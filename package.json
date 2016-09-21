@@ -18,7 +18,9 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "bluebird": "^3.4.6",
+    "express": "^4.14.0",
     "react": "^15.3.1",
+    "react-bootstrap": "^0.30.3",
     "react-dom": "^15.3.1"
   },
   "devDependencies": {

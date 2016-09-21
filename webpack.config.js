@@ -37,23 +37,23 @@ module.exports = {
   resolve: {
     root:               path.join(__dirname, 'src'),
     modulesDirectories: ['node_modules'],
-    extensions:         ['', '.js', '.jsx']
+    extensions:         ['', '.js', '.jsx'],
   },
   plugins,
   output: {
     path: `${__dirname}/public/assets/`,
     filename: jsName,
-    publicPath
+    publicPath,
   },
   module: {
     loaders: [
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader'),
       },
       {
         test: /\.less$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!less-loader')
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!less-loader'),
       },
       { test: /\.gif$/, loader: 'url-loader?limit=10000&mimetype=image/gif' },
       { test: /\.jpg$/, loader: 'url-loader?limit=10000&mimetype=image/jpg' },
